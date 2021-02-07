@@ -32,7 +32,6 @@ STRIP        ?= strip
 TARGET       ?= $(SONAME)
 SYSROOT      := $(shell $(CC) --print-sysroot)
 MACHINE      ?= $(shell $(CC) -dumpmachine)
-DESTDIR      ?= $(SYSROOT)
 CFLAGS       := -fPIC
 SRCDIR       := src
 OBJDIR       := obj/$(MACHINE)
